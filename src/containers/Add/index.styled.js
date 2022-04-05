@@ -7,15 +7,12 @@ export const HomeWrapper = styled.div`
 
 export const InputContainer = styled.div`
 
-
 `
 
 export const Input = styled.input`
 
-
 `
 
 export const Button = styled.button`
-
 
 `

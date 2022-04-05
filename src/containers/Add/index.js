@@ -16,16 +16,16 @@ function Add({todos, setTodos}) {
       <h1>Add</h1>
       <InputContainer>
         <Input
-          value={todo}
+          // value={todo}
           onChange={(e) => {setTodo(e.target.value)}}
           type="text"
           placeholder="Enter todo"
         />
         <Button
           onClick={() => {
-            let arr = [...todos, todo]
+            // todos.push(todo);
+            let arr = [...todos, todo];
             setTodos(arr);
-            // setTodos(todos);
           }}
         >
           Add
