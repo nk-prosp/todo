@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import List from "../../components/List";
-import { Button, HomeWrapper, Input, InputContainer } from "./index.styled";
+import { Button, Heading, HomeWrapper, Input, InputContainer } from "./index.styled";
 import {useNavigate} from 'react-router-dom'
 
 
@@ -9,7 +9,7 @@ function Home({todos=[]}) {
   const navigate = useNavigate();
   return (
     <HomeWrapper>
-      <h1>Home</h1>
+      <Heading>Home</Heading>
       {
           todos.map((item, index) => {
               return <List key={index} todo={item}/>

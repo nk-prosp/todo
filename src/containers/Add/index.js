@@ -1,23 +1,24 @@
 import React, { useEffect, useState } from "react";
-import { Button, HomeWrapper, Input, InputContainer } from "./index.styled";
-import {useNavigate} from 'react-router-dom'
+import { Button, Heading, HomeWrapper, Input, InputContainer } from "./index.styled";
+import { useNavigate } from "react-router-dom";
 
+function Add({ todos, setTodos }) {
 
-function Add({todos, setTodos}) {
   const [todo, setTodo] = useState("");
   const navigate = useNavigate();
 
-  useEffect(()=>{
-    console.log("App",todos);
-  }, [todos])
+  useEffect(() => {
+    console.log("App", todos);
+  }, [todos]);
 
   return (
     <HomeWrapper>
-      <h1>Add</h1>
+      <Heading>Add</Heading>
       <InputContainer>
         <Input
-          // value={todo}
-          onChange={(e) => {setTodo(e.target.value)}}
+          onChange={(e) => {
+            setTodo(e.target.value);
+          }}
           type="text"
           placeholder="Enter todo"
         />
@@ -32,7 +33,7 @@ function Add({todos, setTodos}) {
         </Button>
         <Button
           onClick={() => {
-            navigate("/")
+            navigate("/");
           }}
         >
           Home
