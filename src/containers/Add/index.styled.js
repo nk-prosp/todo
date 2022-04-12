@@ -6,7 +6,7 @@ export const HomeWrapper = styled.div`
 `;
 
 export const InputContainer = styled.div`
-
+width: 20px 
 `
 
 export const Input = styled.input`

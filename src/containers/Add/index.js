@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Button, HomeWrapper, Input, InputContainer } from "./index.styled";
+import {HomeWrapper, Input, InputContainer } from "./index.styled";
 import {useNavigate} from 'react-router-dom'
+import { Button } from 'react-bootstrap';
 
 
 function Add({todos, setTodos}) {
@@ -16,12 +17,12 @@ function Add({todos, setTodos}) {
       <h1>Add</h1>
       <InputContainer>
         <Input
-          // value={todo}
+           value={todo}
           onChange={(e) => {setTodo(e.target.value)}}
           type="text"
           placeholder="Enter todo"
         />
-        <Button
+        <Button variant="primary"
           onClick={() => {
             // todos.push(todo);
             let arr = [...todos, todo];
