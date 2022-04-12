@@ -16,3 +16,8 @@ export const Input = styled.input`
 export const Button = styled.button`
 
 `
+
+export const Heading = styled.h1`
+text-align: center;
+
+`
