@@ -4,20 +4,25 @@ import styled from "styled-components";
 
 
 export const HomeWrapper = styled.div`
-<<<<<<< HEAD
-background: #999;
-width: 40vw;
-margin: 20em auto;
-border-radius: 15px;
-padding: 20px 10px;
-color: white;
-border: 3px solid rgb(36, 110, 194);
-=======
   width: 100%;
   height: 100vh;
   background: #775478;
->>>>>>> a21801a8a2ac27da816ee2465997436ebecd056d
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 `;
+
+export const Content = styled.div`
+height: 400px;
+width: 300px;
+background: #fff;
+border-radius: 10px;
+display: flex;
+/* justify-content: center; */
+align-items: center;
+flex-direction: column;
+`
 
 export const InputContainer = styled.div`
 

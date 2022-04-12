@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home todos={todos} />} />
+          <Route path="/" element={<Home todos={todos} setTodos={setTodos}/>} />
           <Route path="/add" element={<Add todos={todos} setTodos={setTodos}/>} />
           <Route path="/about" element={<About/>} />
         </Routes>
